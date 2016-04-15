@@ -1,7 +1,7 @@
 package org.bull.summer.utils;
 
 
-import com.vividsolutions.jts.geom.Coordinate;
+import org.bull.summer.spatial.model.Coordinate;
 
 /**
  * @author Fx_Bull
