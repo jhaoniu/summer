@@ -47,7 +47,7 @@ public class SpatialSearcherImpl<K, V> implements ISpatialSearcher<K, V> {
     }
 
     @Override
-    public NearestObj<V> findNearest(Coordinate coordinate) {
+    public NearestObj<V> queryNearest(Coordinate coordinate) {
         KdNode<K, V> kdNode = kdTree.queryNearest(coordinate);
         return new NearestObj<>(kdNode.getCoordinate(), kdNode.getDataHolder().get());
     }

@@ -35,7 +35,7 @@ public interface ISpatialSearcher<K, V> {
      * @param coordinate
      * @return
      */
-    public NearestObj<V> findNearest(Coordinate coordinate);
+    public NearestObj<V> queryNearest(Coordinate coordinate);
 
 
     /**
