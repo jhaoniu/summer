@@ -13,7 +13,7 @@ public interface Result<K, V> {
      *
      * @return
      */
-    public void add(DataHolder<K, V> container);
+    public void add(DataHolder<? extends K, ? extends V> container);
 
     /**
      * 返回结果集合

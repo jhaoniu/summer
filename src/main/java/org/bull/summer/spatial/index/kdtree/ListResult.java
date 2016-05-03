@@ -13,7 +13,7 @@ public class ListResult<K, V> implements Result<K, V> {
     List<V> list = new LinkedList<>();
 
     @Override
-    public void add(DataHolder<K, V> container) {
+    public void add(DataHolder<? extends K, ? extends V> container) {
         list.addAll(container.get());
     }
 
